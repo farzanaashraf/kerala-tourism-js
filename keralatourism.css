@@ -1,0 +1,132 @@
+.body-wrapper{
+    background-image: url('images/kerala.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 200px;
+}
+header{
+    background-color: black;
+    height: 5em;
+    width: 100%;
+}
+
+.coverTitle {
+    font-size: 700%;
+    color: #ece18f;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #1d4421;
+}
+
+nav{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:1px solid;
+    padding: 8px;
+    margin: 5px;
+    
+    
+}
+/* .homeAnchor{
+    padding: 150px 0 0 0;
+}
+
+.homeAnchor > div {
+    padding-bottom: 24px;
+}
+
+.btn-info{
+     margin:2em; 
+}
+ .mb-3{
+    color: black;
+    font-weight: bold;
+}
+
+.login-form{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 20%;
+    padding: 24px;
+    border-radius: 8px;
+}
+.form-label{
+    color: white;
+}
+.login-heading{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    
+ } */
+/* .carousel-item-active{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+} */ 
+
+.card-container{
+    display:flex;
+    flex-wrap: wrap;
+    background-size:cover;
+    cursor: pointer;
+  }
+  .card-container > div {
+    background-color: #f1f1f1;
+    line-height: 75px;
+    width: 23%;
+    margin: 1%;
+    
+  }
+
+  .card-image-holder{
+    height: 200px;
+    background-size: cover;
+  }
+  .districts-card{
+    width: 50%;
+
+  }
+  .city-headings{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #072209;
+  }
+  .city-attractions{
+    text-align: center;
+    color: #072209;
+  }
+  .districts-attractions{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .carousel-caption{
+    color: black;
+    /* background-color: #ffffff6e */
+    position:initial;
+    text-align:center;
+  }
+
+  .card-title h4 {
+    text-align: center;
+    padding-top: 12px;
+  }
+  .card-image-holder:hover {
+    transform: scale(1.2);
+    opacity: .7;
+    transition: .5s;
+  }
+  .card{
+    overflow: hidden;
+  }
+  .login-heading{
+    text-align: center;
+    color: #1d4421;
+    font-weight: bold;
+  }

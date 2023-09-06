@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn-Kerala</title>
+    <link rel="stylesheet" href="keralatourism.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="75" viewBox="0 0 200 75">
+            <path d="M15 40 Q80 15, 150 40" fill="none" stroke="green" stroke-width="5" />
+            <path d="M150 40 Q215 65, 185 40" fill="none" stroke="green" stroke-width="5" />
+            <text x="40" y="60" font-family="Arial" font-size="18" fill="green">Kerala Tourism</text>
+          </svg>
+          
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="districts.html">Districts</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h1 class="coverTitle">Welcome To Kerala Tourism</h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="login-form">
+                <form novalidate>
+                    <h2 class="login-heading">Register</h2>
+
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" onchange="emailFunction()">
+                      <div>
+                        <small class="text-danger pt-2 d-block" id="emailPara"></small>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="InputPassword1" onkeyup="newFunction()">
+                      
+                    </div>
+                    <div>
+                        <p id="pwdPara"></p>
+                    </div>  
+                                     
+
+                    <div class="mb-3">
+                        <label for="InputPassword2" class="form-label">Repeat Password</label>
+                        <input type="password" class="form-control" id="InputPassword2" onchange="repeatPassword()">
+                        <div>
+                            <small class="text-danger pt-2 d-block" id="repeatPara"></small>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="mb-3">
+                        <label for="phoneId" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneId"  onkeyup="phoneFunction()">
+
+                        <div>
+                            <small class="text-danger pt-2 d-block" id="phonePara"></small>
+                        </div>
+                    </div>
+
+                    
+                    <br />
+                    <button type="submit" class="btn btn-success" onclick="return registerValidation()">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
